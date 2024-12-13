@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TravelSmart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelSmart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#bookings" class="active">My Bookings</a>
+                <a href="#profile">Profile</a>
+                <a href="#" class="logout-btn">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="welcome-section">
+            <h1>Welcome, <span id="userName"></span></h1>
+            <p>Manage your trips and bookings</p>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="dashboard-card flights-card">
+                <div class="card-header">
+                    <i class="fas fa-plane"></i>
+                    <h3>My Flights</h3>
+                </div>
+                <div class="flight-filters">
+                    <button class="filter-btn active" data-filter="upcoming">Upcoming</button>
+                    <button class="filter-btn" data-filter="past">Past</button>
+                </div>
+                <div class="flight-list" id="flightBookings">
+                    <!-- Flights will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="dashboard-card hotels-card">
+                <div class="card-header">
+                    <i class="fas fa-hotel"></i>
+                    <h3>My Hotels</h3>
+                </div>
+                <div class="hotel-filters">
+                    <button class="filter-btn active" data-filter="upcoming">Upcoming</button>
+                    <button class="filter-btn" data-filter="past">Past</button>
+                </div>
+                <div class="hotel-list" id="hotelBookings">
+                    <!-- Hotel bookings will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="dashboard-card deals-card">
+                <div class="card-header">
+                    <i class="fas fa-star"></i>
+                    <h3>Saved Deals</h3>
+                </div>
+                <div class="deals-list" id="savedDeals">
+                    <!-- Saved deals will be dynamically loaded here -->
+                </div>
+                <button class="view-all-btn">View All Deals</button>
+            </div>
+
+            <div class="dashboard-card profile-card">
+                <div class="card-header">
+                    <i class="fas fa-user"></i>
+                    <h3>Profile Settings</h3>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-field">
+                        <label>Name</label>
+                        <p id="profileName"></p>
+                    </div>
+                    <div class="profile-field">
+                        <label>Email</label>
+                        <p id="profileEmail"></p>
+                    </div>
+                    <div class="profile-field">
+                        <label>Member Since</label>
+                        <p id="memberSince"></p>
+                    </div>
+                </div>
+                <button class="edit-profile-btn">Edit Profile</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal templates -->
+    <div id="flightDetailsModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Flight Details</h2>
+            <div id="flightDetailsContent"></div>
+        </div>
+    </div>
+
+    <div id="editProfileModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="editProfileForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="editName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="editEmail" required>
+                </div>
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

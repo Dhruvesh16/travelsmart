@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels - TravelSmart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelSmart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="flights.html">Flights</a>
+                <a href="hotels.html" class="active">Hotels</a>
+                <a href="deals.html">Deals</a>
+                <a href="login.html" class="login-btn" id="loginBtn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hotels-page">
+        <section class="search-section">
+            <div class="search-container">
+                <form class="hotel-search-form">
+                    <div class="search-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-map-marker-alt"></i> Destination</label>
+                            <input type="text" placeholder="Where are you going?">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Check-in</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Check-out</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Guests</label>
+                            <select>
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>2 Adults, 1 Child</option>
+                                <option>2 Adults, 2 Children</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">Search Hotels</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="hotels-content">
+            <div class="filters-section">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="1000" value="500" class="price-slider">
+                    <div class="price-range">$0 - $500</div>
+                </div>
+                <div class="filter-group">
+                    <h4>Star Rating</h4>
+                    <div class="star-rating">
+                        <label><input type="checkbox"> 5 Stars</label>
+                        <label><input type="checkbox"> 4 Stars</label>
+                        <label><input type="checkbox"> 3 Stars</label>
+                        <label><input type="checkbox"> 2 Stars</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4>Amenities</h4>
+                    <div class="amenities-list">
+                        <label><input type="checkbox"> Free WiFi</label>
+                        <label><input type="checkbox"> Pool</label>
+                        <label><input type="checkbox"> Spa</label>
+                        <label><input type="checkbox"> Gym</label>
+                        <label><input type="checkbox"> Restaurant</label>
+                        <label><input type="checkbox"> Room Service</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotels-list">
+                <div class="hotels-header">
+                    <h2>Available Hotels</h2>
+                    <select class="sort-select">
+                        <option>Sort by Price: Low to High</option>
+                        <option>Sort by Price: High to Low</option>
+                        <option>Sort by Rating</option>
+                        <option>Sort by Popularity</option>
+                    </select>
+                </div>
+
+                <div class="hotel-cards">
+                    <!-- Hotel Card Template -->
+                    <div class="hotel-card">
+                        <div class="hotel-image">
+                            <img src="https://source.unsplash.com/400x300/?hotel" alt="Hotel">
+                            <span class="hotel-rating">
+                                <i class="fas fa-star"></i> 4.5
+                            </span>
+                        </div>
+                        <div class="hotel-details">
+                            <h3>Luxury Hotel & Spa</h3>
+                            <p class="hotel-location">
+                                <i class="fas fa-map-marker-alt"></i> Downtown, New York
+                            </p>
+                            <div class="hotel-amenities">
+                                <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                                <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                                <span><i class="fas fa-spa"></i> Spa</span>
+                            </div>
+                            <div class="hotel-price">
+                                <span class="price">$299</span>
+                                <span class="per-night">per night</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelSmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

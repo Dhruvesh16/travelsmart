@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - TravelSmart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelSmart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="flights.html">Flights</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="deals.html" class="active">Deals</a>
+                <a href="login.html" class="login-btn" id="loginBtn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="deals-page">
+        <section class="featured-deals">
+            <div class="section-header">
+                <h1>Hot Deals</h1>
+                <p>Limited time offers on flights, hotels, and vacation packages</p>
+            </div>
+            <div class="featured-deals-grid">
+                <div class="featured-deal-card">
+                    <div class="deal-image">
+                        <img src="https://source.unsplash.com/600x400/?paris" alt="Paris Deal">
+                        <span class="discount-badge">30% OFF</span>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Paris Summer Package</h3>
+                        <p class="deal-description">5 nights at luxury hotel + flights</p>
+                        <div class="deal-price">
+                            <span class="original-price">$1,999</span>
+                            <span class="discounted-price">$1,399</span>
+                        </div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-content">
+            <div class="filters-section">
+                <h3>Filter Deals</h3>
+                <div class="filter-group">
+                    <h4>Deal Type</h4>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Flight Deals</label>
+                        <label><input type="checkbox"> Hotel Deals</label>
+                        <label><input type="checkbox"> Package Deals</label>
+                        <label><input type="checkbox"> Last Minute</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="2000" value="1000" class="price-slider">
+                    <div class="price-range">$0 - $1000</div>
+                </div>
+                <div class="filter-group">
+                    <h4>Destinations</h4>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Europe</label>
+                        <label><input type="checkbox"> Asia</label>
+                        <label><input type="checkbox"> Americas</label>
+                        <label><input type="checkbox"> Africa</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deals-list">
+                <div class="deals-header">
+                    <h2>All Deals</h2>
+                    <select class="sort-select">
+                        <option>Biggest Savings</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Most Popular</option>
+                    </select>
+                </div>
+
+                <div class="deals-grid">
+                    <!-- Deal Card Examples -->
+                    <div class="deal-card">
+                        <div class="deal-image">
+                            <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo Deal">
+                            <span class="discount-badge">25% OFF</span>
+                        </div>
+                        <div class="deal-content">
+                            <h3>Tokyo Adventure</h3>
+                            <p class="deal-description">3 nights + flights</p>
+                            <ul class="deal-features">
+                                <li><i class="fas fa-plane"></i> Round-trip flights</li>
+                                <li><i class="fas fa-hotel"></i> 4-star hotel</li>
+                                <li><i class="fas fa-utensils"></i> Breakfast included</li>
+                            </ul>
+                            <div class="deal-price">
+                                <span class="original-price">$1,499</span>
+                                <span class="discounted-price">$1,124</span>
+                            </div>
+                            <div class="deal-actions">
+                                <button class="book-btn">Book Now</button>
+                                <button class="save-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelSmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

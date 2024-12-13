@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights - TravelSmart</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelSmart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="flights.html" class="active">Flights</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="deals.html">Deals</a>
+                <a href="login.html" class="login-btn" id="loginBtn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flights-page">
+        <section class="search-section">
+            <div class="search-container">
+                <form class="flight-search-form">
+                    <div class="search-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-plane-departure"></i> From</label>
+                            <input type="text" placeholder="Departure City">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-plane-arrival"></i> To</label>
+                            <input type="text" placeholder="Arrival City">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Departure</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-calendar"></i> Return</label>
+                            <input type="date">
+                        </div>
+                        <button type="submit" class="search-btn">Search Flights</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="flights-content">
+            <div class="filters-section">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="2000" value="1000" class="price-slider">
+                    <div class="price-range">$0 - $1000</div>
+                </div>
+                <div class="filter-group">
+                    <h4>Airlines</h4>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> American Airlines</label>
+                        <label><input type="checkbox"> Delta Airlines</label>
+                        <label><input type="checkbox"> United Airlines</label>
+                        <label><input type="checkbox"> British Airways</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4>Stops</h4>
+                    <div class="radio-group">
+                        <label><input type="radio" name="stops"> Non-stop</label>
+                        <label><input type="radio" name="stops"> 1 Stop</label>
+                        <label><input type="radio" name="stops"> 2+ Stops</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flights-list">
+                <div class="flights-header">
+                    <h2>Available Flights</h2>
+                    <select class="sort-select">
+                        <option>Sort by Price: Low to High</option>
+                        <option>Sort by Price: High to Low</option>
+                        <option>Sort by Duration</option>
+                        <option>Sort by Departure Time</option>
+                    </select>
+                </div>
+
+                <div class="flight-cards">
+                    <!-- Flight Card Template -->
+                    <div class="flight-card">
+                        <div class="airline-info">
+                            <img src="airline-logo.png" alt="Airline Logo">
+                            <span class="airline-name">American Airlines</span>
+                        </div>
+                        <div class="flight-info">
+                            <div class="departure">
+                                <h3>08:00</h3>
+                                <p>New York (JFK)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <span class="duration">2h 30m</span>
+                                <div class="flight-line">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <span class="flight-number">AA 123</span>
+                            </div>
+                            <div class="arrival">
+                                <h3>10:30</h3>
+                                <p>London (LHR)</p>
+                            </div>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$499</span>
+                            <button class="book-btn">Select Flight</button>
+                        </div>
+                    </div>
+                    <!-- More flight cards can be added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelSmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
