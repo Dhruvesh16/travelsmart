@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flights - TravelSmart</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <div class="logo">TravelSmart</div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="flights.html" class="active">Flights</a>
+                <a href="/flights.html" class="active">Flights</a>
                 <a href="hotels.html">Hotels</a>
                 <a href="deals.html">Deals</a>
                 <a href="login.html" class="login-btn" id="loginBtn">Sign In</a>
@@ -60,9 +60,9 @@
                     <h4>Airlines</h4>
                     <div class="checkbox-group">
                         <label><input type="checkbox"> American Airlines</label>
-                        <label><input type="checkbox"> Delta Airlines</label>
-                        <label><input type="checkbox"> United Airlines</label>
                         <label><input type="checkbox"> British Airways</label>
+                        <label><input type="checkbox"> Emirates</label>
+                        <label><input type="checkbox"> Delta Airlines</label>
                     </div>
                 </div>
                 <div class="filter-group">
@@ -87,10 +87,12 @@
                 </div>
 
                 <div class="flight-cards">
-                    <!-- Flight Card Template -->
+                    <!-- American Airlines Flight -->
                     <div class="flight-card">
                         <div class="airline-info">
-                            <img src="airline-logo.png" alt="Airline Logo">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/11/American-Airlines-Logo.png" 
+                                 alt="American Airlines Logo"
+                                 onerror="this.src='https://source.unsplash.com/50x50/?americanairlines,airline'">
                             <span class="airline-name">American Airlines</span>
                         </div>
                         <div class="flight-info">
@@ -115,7 +117,69 @@
                             <button class="book-btn">Select Flight</button>
                         </div>
                     </div>
-                    <!-- More flight cards can be added here -->
+
+                    <!-- British Airways Flight -->
+                    <div class="flight-card">
+                        <div class="airline-info">
+                            <img src="https://companieslogo.com/img/orig/BAB-84ab74a3.png?t=1684126280" 
+                                 alt="British Airways Logo"
+                                 onerror="this.src='https://assets.balogo.com/ba-logo.png'"
+                                 style="width: 50px; height: auto; object-fit: contain;">
+                            <span class="airline-name">British Airways</span>
+                        </div>
+                        <div class="flight-info">
+                            <div class="departure">
+                                <h3>14:20</h3>
+                                <p>London (LHR)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <span class="duration">7h 45m</span>
+                                <div class="flight-line">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <span class="flight-number">BA 178</span>
+                            </div>
+                            <div class="arrival">
+                                <h3>22:05</h3>
+                                <p>New York (JFK)</p>
+                            </div>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$589</span>
+                            <button class="book-btn">Select Flight</button>
+                        </div>
+                    </div>
+
+                    <!-- Emirates Flight -->
+                    <div class="flight-card">
+                        <div class="airline-info">
+                            <img src="https://logos-world.net/wp-content/uploads/2020/03/Emirates-Logo.png" 
+                                 alt="Emirates Logo"
+                                 onerror="this.src='https://source.unsplash.com/50x50/?emirates,airline'">
+                            <span class="airline-name">Emirates</span>
+                        </div>
+                        <div class="flight-info">
+                            <div class="departure">
+                                <h3>23:15</h3>
+                                <p>Dubai (DXB)</p>
+                            </div>
+                            <div class="flight-duration">
+                                <span class="duration">14h 20m</span>
+                                <div class="flight-line">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <span class="flight-number">EK 201</span>
+                            </div>
+                            <div class="arrival">
+                                <h3>13:35</h3>
+                                <p>New York (JFK)</p>
+                            </div>
+                        </div>
+                        <div class="price-section">
+                            <span class="price">$842</span>
+                            <button class="book-btn">Select Flight</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,6 +210,6 @@
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

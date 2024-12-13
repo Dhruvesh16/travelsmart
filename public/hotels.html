@@ -54,35 +54,6 @@
         </section>
 
         <section class="hotels-content">
-            <div class="filters-section">
-                <h3>Filters</h3>
-                <div class="filter-group">
-                    <h4>Price Range</h4>
-                    <input type="range" min="0" max="1000" value="500" class="price-slider">
-                    <div class="price-range">$0 - $500</div>
-                </div>
-                <div class="filter-group">
-                    <h4>Star Rating</h4>
-                    <div class="star-rating">
-                        <label><input type="checkbox"> 5 Stars</label>
-                        <label><input type="checkbox"> 4 Stars</label>
-                        <label><input type="checkbox"> 3 Stars</label>
-                        <label><input type="checkbox"> 2 Stars</label>
-                    </div>
-                </div>
-                <div class="filter-group">
-                    <h4>Amenities</h4>
-                    <div class="amenities-list">
-                        <label><input type="checkbox"> Free WiFi</label>
-                        <label><input type="checkbox"> Pool</label>
-                        <label><input type="checkbox"> Spa</label>
-                        <label><input type="checkbox"> Gym</label>
-                        <label><input type="checkbox"> Restaurant</label>
-                        <label><input type="checkbox"> Room Service</label>
-                    </div>
-                </div>
-            </div>
-
             <div class="hotels-list">
                 <div class="hotels-header">
                     <h2>Available Hotels</h2>
@@ -95,19 +66,17 @@
                 </div>
 
                 <div class="hotel-cards">
-                    <!-- Hotel Card Template -->
+                    <!-- Luxury Hotel -->
                     <div class="hotel-card">
                         <div class="hotel-image">
-                            <img src="https://source.unsplash.com/400x300/?hotel" alt="Hotel">
-                            <span class="hotel-rating">
-                                <i class="fas fa-star"></i> 4.5
-                            </span>
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Luxury Hotel & Spa"
+                                 onerror="this.src='https://source.unsplash.com/400x300/?luxuryhotel'">
+                            <span class="hotel-rating"><i class="fas fa-star"></i> 4.8</span>
                         </div>
                         <div class="hotel-details">
                             <h3>Luxury Hotel & Spa</h3>
-                            <p class="hotel-location">
-                                <i class="fas fa-map-marker-alt"></i> Downtown, New York
-                            </p>
+                            <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
                             <div class="hotel-amenities">
                                 <span><i class="fas fa-wifi"></i> Free WiFi</span>
                                 <span><i class="fas fa-swimming-pool"></i> Pool</span>
@@ -115,6 +84,78 @@
                             </div>
                             <div class="hotel-price">
                                 <span class="price">$299</span>
+                                <span class="per-night">per night</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Beach Resort -->
+                    <div class="hotel-card">
+                        <div class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Beachfront Paradise Resort"
+                                 onerror="this.src='https://source.unsplash.com/400x300/?beachresort'">
+                            <span class="hotel-rating"><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <div class="hotel-details">
+                            <h3>Beachfront Paradise Resort</h3>
+                            <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Maldives</p>
+                            <div class="hotel-amenities">
+                                <span><i class="fas fa-umbrella-beach"></i> Private Beach</span>
+                                <span><i class="fas fa-utensils"></i> Restaurant</span>
+                                <span><i class="fas fa-cocktail"></i> Bar</span>
+                            </div>
+                            <div class="hotel-price">
+                                <span class="price">$459</span>
+                                <span class="per-night">per night</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+
+                    <!-- City Boutique Hotel -->
+                    <div class="hotel-card">
+                        <div class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Urban Boutique Hotel"
+                                 onerror="this.src='https://source.unsplash.com/400x300/?boutiquehotel'">
+                            <span class="hotel-rating"><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <div class="hotel-details">
+                            <h3>Urban Boutique Hotel</h3>
+                            <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                            <div class="hotel-amenities">
+                                <span><i class="fas fa-bed"></i> Luxury Rooms</span>
+                                <span><i class="fas fa-coffee"></i> Breakfast</span>
+                                <span><i class="fas fa-concierge-bell"></i> Room Service</span>
+                            </div>
+                            <div class="hotel-price">
+                                <span class="price">$199</span>
+                                <span class="per-night">per night</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Mountain Lodge -->
+                    <div class="hotel-card">
+                        <div class="hotel-image">
+                            <img src="https://images.unsplash.com/photo-1517320964276-a002fa203177?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Mountain View Lodge"
+                                 onerror="this.src='https://source.unsplash.com/400x300/?mountainresort'">
+                            <span class="hotel-rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <div class="hotel-details">
+                            <h3>Mountain View Lodge</h3>
+                            <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> Swiss Alps</p>
+                            <div class="hotel-amenities">
+                                <span><i class="fas fa-mountain"></i> Scenic Views</span>
+                                <span><i class="fas fa-skiing"></i> Ski Access</span>
+                                <span><i class="fas fa-fire"></i> Fireplace</span>
+                            </div>
+                            <div class="hotel-price">
+                                <span class="price">$349</span>
                                 <span class="per-night">per night</span>
                             </div>
                             <button class="book-btn">Book Now</button>
@@ -143,6 +184,15 @@
                 <h4>Legal</h4>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
